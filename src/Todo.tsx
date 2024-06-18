@@ -39,7 +39,7 @@ const TodoApp: React.FC = () => {
   return (
     <div style={{ maxWidth: 400, margin: 'auto', padding: 20 }}>
       <TextField
-        label="Add Todo"
+        label="Escribe..."
         variant="outlined"
         fullWidth
         value={inputText}
@@ -55,7 +55,7 @@ const TodoApp: React.FC = () => {
         onClick={handleAddTodo}
         style={{ marginBottom: 20 }}
       >
-        Add Todo
+        Agregar Tarea
       </Button>
       <List>
         {todos.map((todo) => (
