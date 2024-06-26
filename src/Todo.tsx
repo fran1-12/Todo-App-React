@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, List, ListItem, ListItemText, ListItemSecondaryAction, IconButton, Checkbox } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 type Todo = {
   id: number;
@@ -53,7 +54,8 @@ const TodoApp: React.FC = () => {
         variant="contained"
         color="primary"
         onClick={handleAddTodo}
-        style={{ marginBottom: 20 }}
+        style={{ marginBottom: 25 }}
+        startIcon={<AddCircleIcon />}
       >
         Agregar Tarea
       </Button>
